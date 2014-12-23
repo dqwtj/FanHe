@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+
+  <title>饭盒</title>
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+</head>
+<script>
+var system = {
+  iphone : false,
+  android : false,
+  winphone : false,
+  blackberry : false
+}
+
+system.iphone = (navigator.userAgent.match(/iphone/i) != null)?true:false;
+system.android = (navigator.userAgent.match(/android/i) != null)?true:false;
+system.winphone = (navigator.userAgent.match(/Windows Phone/i) != null)?true:false;
+system.blackberry = (navigator.userAgent.match(/blackberry/i) != null)?true:false;
+
+//User is using a mobile device, remove the video
+if(system.iphone || system.android || system.winphone || system.blackberry)  
+{
+  location.href = "m.html";
+}
+</script>
+  <body>      
+    <div class="nav" style="font-size: 18px;">
+        <a href="index.html">首页</a><span>|</span><a href="about.html">关于饭盒</a><span>|</span><a  href="join.html"class="join">加入饭盒</a>
+      </div>
+
+    <div class="banner">
+      <div class="container">
+      <img src="img/banner.png" class="phone">
+      <div class="right-part">
+        <img src="img/fonts.png">
+        <div class="downloads">
+          <img src="img/app.png" class="app">
+          <a href="join.html"><img src="img/download2.png" class="app2"></a>
+          <a href="https://itunes.apple.com/cn/app/fan-he-zhuan-shu-fen-si-tu/id927289999?mt=8.html"><img src="img/download1.png" class="app2"></a>
+        </divs>
+      </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="cats">
+      <h1 style="font-size: 48px;">专属粉丝的图片群聊App</h1>
+      <div class="feature">
+        <img src="img/tedian1.png" class="tedian1" />
+        <p>边刷图边吐槽</p>
+        <p>这里的水塘被我承包了!</p>     
+      </div> 
+      <div class="feature">
+        <img src="img/tedian2.png" class="tedian2" />
+        <p>谁规定自己不能跟自己玩</p>
+        <p>聊起来就是辣么任性!</p> 
+      </div>
+      <div class="feature">         
+        <img src="img/tedian3.png" class="tedian3" />
+        <p>不用担心没有人关注</p>
+        <p>本来就不需要关注功能呀~</p>     
+      </div>    
+  </div>
+  </div>
+  <div class="clear"></div>
+  <div class="banner" id="hey">
+    <div class="container">
+    <h2 style="font-size: 36px;">随时随地的大趴体，就等你加入了！</h2>
+    <img src="img/phone.png" class="second-phone"/>
+    <div class="dialog">
+      <div class="dia1">
+        <img src="img/duihua1.png" id="hey1" class="touxiang"><img src="img/hua1.png" id="speak1" class="hua1">
+      </div>
+      <div class="dia2">
+        <img src="img/duihua2.png" id="hey2" class="touxiang"><img src="img/hua2.png" id="speak2" class="hua2">
+      </div>
+      <div class="dia3">
+        <img src="img/duihua3.png" id="hey3" class="touxiang"><img src="img/hua3.png" id="speak3" class="hua3">
+      </div>            
+    </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="container">
+  <div class="downloading">
+    <p></p>
+    <a href="https://itunes.apple.com/cn/app/fan-he-zhuan-shu-fen-si-tu/id927289999?mt=8.html"><img src="img/download1.png" class="app2"></a>
+    <a href="join.html"><img src="img/download2.png" class="app2"></a>   
+  </div>
+  </div>
+  <div class="footer">
+    <p style="font-size: 14px;">Copyright © 2014 fanheapp.com All Rights Reserved. 京ICP备14014730号-2</p> 
+  </div>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){ 
+   $(window).resize(function(){location.reload(); });
+  	var x = document.body.clientWidth;
+  	if( x >= 1200 )
+  	{
+  		$(".container").css("margin-left",(x-1200)/2 + 'px');
+  	}
+    $("#hey").mouseenter(function(){
+      $("#hey1").animate({width:"8%"});
+      $("#speak1").animate({width:"38%"},function(){
+        $("#hey1").animate({width:"5%"});
+        $("#speak1").animate({width:"24%"});
+        $("#hey2").animate({width:"8%"});
+        $("#speak2").animate({width:"45%"},function(){
+        $("#hey2").animate({width:"5%"});
+        $("#speak2").animate({width:"33%"});
+         $("#hey3").animate({width:"8%"});
+        $("#speak3").animate({width:"30%"},function(){
+        $("#hey3").animate({width:"5%"});
+        $("#speak3").animate({width:"18%"});          
+        });       
+        });        
+      });
+    });
+   }); 
+  </script>  
+  </body>
+</html>

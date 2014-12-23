@@ -1,0 +1,145 @@
+body { padding: 0px; margin: 0px; font-family: '微软雅黑'; }
+a, a:visited, a:hover{ text-decoration: none; color: #fff; cursor: default;}
+img { width: 100%; height: auto; }
+
+.clear{
+	clear: both;
+}
+.nav{
+	padding-top: 20px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+.nav a{
+	padding: 5px 10px;
+	font-size: 18px;
+}
+.banner{
+	 width: 100%; 
+	 height: 100%; 
+	 min-height: 100%;
+	 overflow: hidden; 
+	 background-image: url('../img/back.png');
+	 background-size: 100% 100%;
+	 background-repeat: repeat-x; 
+	 text-align: center;
+	}
+.banner img{
+	width: 80%;
+	padding-top: 15%;
+	padding-bottom: 25%;
+}
+
+
+.hey{
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	background-image: url('../img/m_back.png');
+	 background-size: 100% 100%;
+	 background-repeat: no-repeat; 
+	 text-align: center;
+	 padding-bottom: 60%;
+	 margin-top: -50px;
+}
+
+.hey .app{
+	width: 20%;
+	float: left;
+	margin-left: 20%;
+}
+
+.hey .down1{
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+	margin-top: 6%;
+}
+
+.miao{
+	margin-top: 84%;
+	width: 100%;
+	text-align: center;
+}
+
+.miao img{
+	width: 50%;
+	margin: 5% 0px;
+}
+
+.down_banner{
+	 width: 100%; 
+	 height: 100%; 
+	 min-height: 100%;
+	 overflow: hidden; 
+	 background-image: url('../img/back.png');
+	 background-size: 100% 100%;
+	 background-repeat: repeat-x; 
+	 text-align: center;
+	 padding-bottom: 60%;
+	}
+
+.dialog{
+	position: absolute;
+	text-align: center;
+}
+
+.dialog img{
+	display: inline-block;
+}
+
+.dialog .touxiang{
+	width: 15%;
+}
+
+.dia1{
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.dia2{
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.dia3{
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.dialog .hua1{
+	width: 70%;
+}
+
+.dialog .hua2{
+	width: 85%;
+}
+
+.dialog .hua3{
+	width: 50%;
+}
+
+.down_banner h2{
+	margin: 5px 0px;
+}
+
+.m_phone{
+	position: absolute;
+	z-index: 300;
+	margin-top: -40px;
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	 background-image: url('../img/back.png');
+	 background-repeat: repeat-x;	
+	 padding: 2px 0;
+	 margin-top: 90%;
+}
+
+
